@@ -3,6 +3,19 @@ import "../styles/home.css";
 import profileImage from "../assets/profile.jpg";
 
 const Home = () => {
+  const handleResumeClick = () => {
+    const resumeUrl = "Ganga-portfolio/resume.pdf"; // Public folder file
+    window.open(resumeUrl, "_blank"); // Open in new tab
+    setTimeout(() => {
+      const link = document.createElement("a");
+      link.href = resumeUrl;
+      link.download = "Ganga_Bhavani_Resume.pdf"; // Set custom filename
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }, 1000); // Delay download to ensure tab opens first
+  };
+
   return (
     <div className="container">
       <div className="righttcont">
@@ -14,7 +27,9 @@ const Home = () => {
           Crafting beautiful and responsive web experiences with modern
           technologies
         </p>
-        <button className="button">Resume</button>
+        <button className="button" onClick={handleResumeClick}>
+          Resume
+        </button>
       </div>
       <div className="leftcont">
         <img
@@ -23,7 +38,7 @@ const Home = () => {
           height="400px"
           alt="profileImage"
           className="profileImage"
-          style={{ borderRadius: "50%",border:"10px solid white" }}
+          style={{ borderRadius: "50%", border: "10px solid white" }}
         />
       </div>
     </div>
