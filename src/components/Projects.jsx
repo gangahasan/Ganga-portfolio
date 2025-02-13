@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGlobe, FaGithub } from "react-icons/fa";
 import projectImage1 from "../assets/projectTastyTrailLandingPage.png";
-import projectImage2 from "../assets/projectTastyTrailLandingPage.png";
+import projectImage2 from "../assets/project2screenshot.png";
 import "../styles/projects.css"
 
 const projects = [
@@ -11,16 +11,16 @@ const projects = [
     description:
       "A responsive dashboard with real-time analytics and inventory management features.",
     image: projectImage1,
-    liveLink: "https://example.com",
-    codeLink: "https://github.com/example",
+    liveLink: "https://gangahasan.github.io/Tasty-Trail/",
+    codeLink: "https://github.com/gangahasan/Tasty-Trail",
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "User Dashboard",
     description:
-      "A collaborative task management application with real-time updates and team features.",
+      "User dashboard with real-time analytics and inventory management features",
     image: projectImage2,
-    liveLink: "https://example.com",
+    liveLink: "https://react-fb-dash-ganga.vercel.app/",
     codeLink: "https://github.com/example",
   },
 ];
