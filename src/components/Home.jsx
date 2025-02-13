@@ -4,16 +4,16 @@ import profileImage from "../assets/profile.jpg";
 
 const Home = () => {
   const handleResumeClick = () => {
-    const resumeUrl = "Ganga-portfolio/resume.pdf"; // Public folder file
-    window.open(resumeUrl, "_blank"); // Open in new tab
+    const resumeUrl = "/resume.pdf";
+    window.open(resumeUrl, "_blank"); 
     setTimeout(() => {
       const link = document.createElement("a");
       link.href = resumeUrl;
-      link.download = "Ganga_Bhavani_Resume.pdf"; // Set custom filename
+      link.download = "Ganga_Bhavani_Resume.pdf"; 
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-    }, 1000); // Delay download to ensure tab opens first
+    }, 1000);
   };
 
   return (
