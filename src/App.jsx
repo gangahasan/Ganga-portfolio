@@ -7,6 +7,7 @@ import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 import Resume from "./components/Resume.jsx";
 import "./App.css"
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         
         <Resume />
       </section>
+      <Footer />
     </div>
   );
 };
