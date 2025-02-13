@@ -1,0 +1,23 @@
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#F2F3FF;
+    margin: 0px;
+    padding:6rem 2rem;
+
+}
+button{
+    background-color:#4F46E5;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    font-size:18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+h1{
+    margin: 0px;
+}

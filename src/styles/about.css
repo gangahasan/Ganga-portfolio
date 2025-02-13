@@ -1,0 +1,9 @@
+
+.about p {
+  text-align: start; /* Centers the text inside <p> */
+  max-width: 700px; /* Limits width for better readability */
+  margin: 30px auto; 
+  font-size: 18px;
+  color:#4B5563;
+  line-height:1.6;/* Centers the paragraph horizontally */
+}
