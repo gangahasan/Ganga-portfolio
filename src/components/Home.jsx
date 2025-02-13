@@ -4,7 +4,7 @@ import profileImage from "../assets/profile.jpg";
 
 const Home = () => {
   const handleResumeClick = () => {
-    const resumeUrl = "/resume.pdf";
+    const resumeUrl = "Ganga-portfolio/resume.pdf";
     window.open(resumeUrl, "_blank"); 
     setTimeout(() => {
       const link = document.createElement("a");
