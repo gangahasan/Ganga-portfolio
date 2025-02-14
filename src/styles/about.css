@@ -7,3 +7,31 @@
   color:#4B5563;
   line-height:1.6;/* Centers the paragraph horizontally */
 }
+@media (max-width: 600px) {
+  .about p {
+    max-width: 90%; /* Makes text more readable on small screens */
+    font-size: 16px; /* Decrease font size for better readability */
+    margin: 20px auto;
+    line-height: 1.5;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .about p {
+    max-width: 80%;
+    font-size: 17px;
+    margin: 25px auto;
+    line-height: 1.6;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  .about p {
+    max-width: 700px; /* Keeps the original width */
+    font-size: 18px;
+    margin: 30px auto;
+    line-height: 1.6;
+  }
+}

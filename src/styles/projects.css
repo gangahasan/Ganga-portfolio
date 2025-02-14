@@ -1,14 +1,16 @@
 .projects-container {
   text-align: center;
-  padding-left: 40px;
+  padding: 40px;
 }
 
+/* Project Title */
 .projects-title {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
+/* Project Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -16,6 +18,7 @@
   justify-content: center;
 }
 
+/* Project Card */
 .project-card {
   background: white;
   border-radius: 10px;
@@ -29,21 +32,25 @@
   transform: translateY(-5px);
 }
 
+/* Project Image */
 .project-image {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Project Info */
 .project-info {
   padding: 15px;
   text-align: center;
 }
-.project-info p{
-    margin-top: 10px;
-    color:#4B5563 ;
+
+.project-info p {
+  margin-top: 10px;
+  color: #4B5563;
 }
 
+/* Project Links */
 .project-links {
   margin-top: 10px;
   display: flex;
@@ -63,20 +70,48 @@
   transition: background-color 0.3s ease;
 }
 
-/* .live-demo {
-  background-color: #007bff;
-  color: white;
-}
-
-.github-code {
-  background-color: #24292e;
-  color: white;
-} */
-
+/* Hover Effect */
 .project-links a:hover {
   opacity: 0.8;
 }
 
 .icon {
   font-size: 18px;
+}
+
+/* 🔹 Responsive Design for Tablets */
+@media (max-width: 1024px) {
+  .projects-container {
+    padding: 20px;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+  }
+}
+
+/* 🔹 Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 15px;
+  }
+  .projects-title {
+    font-size: 24px;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+/* 🔹 Small Screen Adjustments */
+@media (max-width: 480px) {
+  .projects-title {
+    font-size: 22px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }

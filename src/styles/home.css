@@ -1,23 +1,58 @@
-.container{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color:#F2F3FF;
-    margin: 0px;
-    padding:6rem 2rem;
-
-}
-button{
-    background-color:#4F46E5;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:6px;
-    font-size:18px;
-    font-weight: 600;
-    margin-top: 20px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F2F3FF;
+  margin: 0;
+  padding: 6rem 2rem;
 }
 
-h1{
-    margin: 0px;
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+    padding: 4rem 1.5rem;
+  }
+}
+
+/* Button styles */
+button {
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #3b38c3;
+  transform: scale(1.05);
+}
+
+/* Button styles for smaller screens */
+@media (max-width: 768px) {
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+/* Headings */
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Adjust heading size for small screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
 }
