@@ -8,6 +8,7 @@ const Resume = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        marginBottom: "60px",
       }}
     >
       <button

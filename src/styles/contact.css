@@ -9,7 +9,7 @@
 }
 
 .contact-title {
-    text-align: center;
+  text-align: center;
   font-size: 28px;
   font-weight: bold;
   color: #232323;
@@ -120,7 +120,8 @@ hr {
     margin-bottom: 8px;
   }
 
-  .link h5, .link a {
+  .link h5,
+  .link a {
     font-size: 14px;
   }
 

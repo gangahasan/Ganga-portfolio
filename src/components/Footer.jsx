@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
@@ -8,13 +8,16 @@ const Footer = () => {
         textAlign: "center",
         padding: "20px",
         color: "#4F46E5",
-        fontSize:"16px",
-        fontWeight:"600",
+        fontSize: "16px",
+        fontWeight: "600",
+        bottom: "0px",
+        position: "fixed",
+        width: "100%",
       }}
     >
       <p>Thank you for visiting MyPortfolio</p>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;

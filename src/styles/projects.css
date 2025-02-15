@@ -13,9 +13,12 @@
 /* Project Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px;
+  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 40px;
   justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* Project Card */
@@ -47,7 +50,7 @@
 
 .project-info p {
   margin-top: 10px;
-  color: #4B5563;
+  color: #4b5563;
 }
 
 /* Project Links */
@@ -63,7 +66,7 @@
   align-items: center;
   gap: 5px;
   text-decoration: none;
-  color: #4F46E5;
+  color: #4f46e5;
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 5px;
