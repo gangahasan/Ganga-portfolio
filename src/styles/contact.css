@@ -1,3 +1,4 @@
+
 .contact-container {
   max-width: 500px;
   margin: 1rem auto 6rem auto;
@@ -98,6 +99,10 @@ hr {
 }
 
 @media (max-width: 600px) {
+
+  .contact-wrapper{
+  margin-top: 5rem;
+  }
   .contact-container {
     width: 90%;
     padding: 15px;
