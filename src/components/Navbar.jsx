@@ -13,6 +13,18 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+   const handleResumeClick = () => {
+     const resumeUrl = "/Ganga-portfolio/resume.pdf";
+     window.open(resumeUrl, "_blank");
+     setTimeout(() => {
+       const link = document.createElement("a");
+       link.href = resumeUrl;
+       link.download = "Ganga_Bhavani_Resume.pdf";
+       document.body.appendChild(link);
+       link.click();
+       document.body.removeChild(link);
+     }, 1000);
+   };
   return (
     <nav className="navbar">
       <h1 style={{ color: "rgb(78, 78, 249)", fontSize: "28px" }}>Ganga</h1>
@@ -50,7 +62,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="#resume" onClick={closeMenu}>
+          <a href="#resume" onClick={handleResumeClick}>
             Resume
           </a>
         </li>

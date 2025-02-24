@@ -11,7 +11,7 @@ const Resume = () => {
         marginBottom: "60px",
       }}
     >
-      <button
+      {/* <button
         style={{
           backgroundColor: "#4F46E5",
           color: "white",
@@ -38,7 +38,7 @@ const Resume = () => {
         >
           Resume <FiDownload size={20} />
         </a>
-      </button>
+      </button> */}
     </div>
   );
 };
