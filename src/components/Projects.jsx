@@ -2,7 +2,7 @@ import React from "react";
 import { FaGlobe, FaGithub } from "react-icons/fa";
 import projectImage1 from "../assets/projectTastyTrailLandingPage.png";
 import projectImage2 from "../assets/project2screenshot.png";
-import "../styles/projects.css"
+import "../styles/projects.css";
 
 const projects = [
   {
@@ -21,7 +21,7 @@ const projects = [
       "User dashboard with real-time analytics and inventory management features",
     image: projectImage2,
     liveLink: "https://react-fb-dash-ganga.vercel.app/",
-    codeLink: "https://github.com/example",
+    codeLink: "https://github.com/bavaniganga/react-fb-dash",
   },
 ];
 
@@ -59,7 +59,6 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            
           </div>
         ))}
       </div>
